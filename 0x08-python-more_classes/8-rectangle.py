@@ -4,6 +4,7 @@
 
 class Rectangle:
     """Represent a rectangle.
+
     Attributes:
         number_of_instances (int): The number of Rectangle instances.
         print_symbol (any): The symbol used for string representation.
@@ -40,7 +41,7 @@ class Rectangle:
         """Get/set the height of the Rectangle."""
         return self.__height
 
-@height.setter
+    @height.setter
     def height(self, value):
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
